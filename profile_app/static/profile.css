@@ -1,0 +1,174 @@
+/* LINKS */
+/* Removes text decoration (underlines) from links */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+/* NAV BAR */
+
+
+.userImage{
+    width: 10%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.nav-link{
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;}
+
+/* SECTIONS */
+
+/* INFO SECTION  */
+/* Section that will hold some basic info on user */
+#infoSection{
+    display: flex;
+    height: 80vh;
+    background-color: rgb(54, 54, 54);
+    padding: 4% 12%;
+}
+
+.mainUserImage{
+    width: 30%;
+    border-radius: 80%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.links{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+
+.shareIcon{
+    color: white;
+}
+
+/* CARD SECTION 
+Section that will hold user's cards */
+#cardSection{
+    height: 180vh;
+    background-color: rgb(54, 54, 54);
+     padding: 4% 12%;
+}
+
+.cardSectionHeaderText{
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   color: white; 
+}
+
+.container1{
+    margin-top: 3%;
+}
+
+.card{
+    width: 70%;
+}
+
+/* FOOTER SECTION  */
+footer{
+    height: 15vh;
+    background-color: white;
+}
+
+:root {
+    --bg: #dcdde1;
+    --color-icon: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.socialButtons {
+    width: 100%;
+    height: 10vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-list {
+    width: 50%;
+    max-width: 25rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.icon-item {
+    list-style: none;
+}
+
+.icon-link {
+    display: inline-flex;
+    font-size: 2rem;
+    color: var(--color-icon);
+    width: 4rem;
+    height: 4rem;
+    transition: .5s linear;
+    position: relative;
+    z-index: 1;
+    margin: auto
+}
+
+.icon-link:hover {
+    color: #fff;
+}
+
+.icon-link i {
+    margin: auto;
+}
+
+.icon-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 4rem;
+    height: 4rem;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.3s cubic-bezier(.95, .32, .37, 1.21);
+}
+
+.icon-link:hover::before {
+    transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+    background: black;
+}
+
+.icon-item:nth-child(2) a:hover:before {
+    background: black
+}
+
+
+.icon-item:nth-child(4) a:hover:before {
+    background: black;
+}
+
+.icon-item:nth-child(5) a:hover:before {
+    background: black;
+}
