@@ -24,6 +24,9 @@ A web app made using Django - create a profile and fill it with anything you wan
 - Have a new idea? Create an 'issue': https://github.com/AlexanderNorton/UntitledApp/issues
 - To clone the repo, use `git clone https://github.com/AlexanderNorton/UntitledApp.git`.
 - Use `git status` to check what's been changed or ready to be comitted.
+- Create a new branch with a name related to the issue you created: `git checkout -b front_page`.
+- Make the required changes to complete the issue. For example, complete the front page code.
 - Use `git add .` to mark all changed files as ready to commit.
 - Use `git commit -m "some message"` to create a commit with the changed files. Include a useful message so everyone knows what the change was.
-- Use `git push` to push the changes to the Github server.
+- Use `git push` to push the changes to the Github server. The changes will now be in the `front_page` branch.
+- Merge with master by making a pull request. Someone will review the change and approve it for merging.
