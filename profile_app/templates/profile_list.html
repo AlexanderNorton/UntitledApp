@@ -1,4 +1,21 @@
-Norton and Richard's epic Django site
-which will be linkedin but the way it was supposed to be
-and anything else anyone wants
-that's all for now.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profiles</title>
+    </head>
+    <body>
+        <header>
+            <center>
+            <h1><a href="/">UntitledApp</a></h1>
+            </center>
+        </header>
+        
+        {% for profile in profiles %}
+            <article>
+                <h2><a href="">{{ profile.title }}</a></h2>
+                <p>Description: {{ profile.description|linebreaksbr }}</p>
+                <time>Last updated: {{ profile.updated_date }}</time>
+            </article>
+        {% endfor %}
+    </body>
+</html>
