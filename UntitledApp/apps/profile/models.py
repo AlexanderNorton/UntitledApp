@@ -5,10 +5,10 @@ from django.utils import timezone
 
 class Profile(models.Model):
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=400)
     description = models.TextField(max_length=400)
     created_date = models.DateTimeField(default=timezone.now)
-    updated_date = models.DateTimeField(blank=True, null=True)
+    updated_date = models.DateTimeField(blank=True)
 
     def update(self):
         self.updated_date = timezone.now()
