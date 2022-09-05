@@ -36,8 +36,6 @@ a:active {
 /* Section that will hold some basic info on user */
 #infoSection{
     display: flex;
-    height: 80vh;
-    background-color: rgb(54, 54, 54);
     padding: 4% 12%;
 }
 
@@ -60,14 +58,12 @@ a:active {
 /* CARD SECTION 
 Section that will hold user's cards */
 #cardSection{
-    height: 180vh;
-    background-color: rgb(54, 54, 54);
-     padding: 4% 12%;
+    padding: 4% 12%;
 }
 
 .cardSectionHeaderText{
    font-family: 'Yanone Kaffeesatz', sans-serif;
-   color: white; 
+   color: rgb(0, 0, 0); 
 }
 
 .container1{
