@@ -1,13 +1,12 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+<h1><a href="/">Latest Profiles:</a></h1>
 
-{% block content %}
-  <h1><a href="/">Latest Profiles:</a></h1>
-        
-  {% for profile in profiles %}
-  <article>
-    <h2><a href="{% url 'profile' owner=profile.owner %}">{{ profile.title }}</a></h2>
-    <p>Description: {{ profile.description|linebreaksbr }}</p>
-    <time>Last updated: {{ profile.updated_date }}</time>
-  </article>
-  {% endfor %}
-{% endblock %}
+{% for profile in profiles %}
+<article>
+  <h2>
+    <a href="{% url 'profile' owner=profile.owner %}">{{ profile.title }}</a>
+  </h2>
+  <p>Description: {{ profile.description|linebreaksbr }}</p>
+  <time>Last updated: {{ profile.updated_date }}</time>
+</article>
+{% endfor %} {% endblock %}

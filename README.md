@@ -3,24 +3,26 @@
 A web app made using Django - create a profile and fill it with anything you want.
 
 # Getting started
+
 - Install Python:
 - Install Git Bash: https://git-scm.com/download/win
 - Open Git Bash in the project's base directory (Right click - 'git bash here').
 - Use Visual Studio Code terminals for the same.
 - Create a virtual environment:
-`python -m venv env`
+  `python -m venv env`
 - Activate the environment:
-`source env/Scripts/activate`
+  `source env/Scripts/activate`
 - Ensure pip is up to date:
-`python -m pip install --upgrade pip`
+  `python -m pip install --upgrade pip`
 - Install the dependencies:
-`pip install -r requirements.txt`
+  `pip install -r requirements.txt`
 - Migrate all database models:
-`python manage.py migrate`
+  `python manage.py migrate`
 - Start up the webserver:
-`python manage.py runserver`
+  `python manage.py runserver`
 
 # Contributing with Git
+
 - Have a new idea? Create an 'issue': https://github.com/AlexanderNorton/UntitledApp/issues
 - To clone the repo, use `git clone https://github.com/AlexanderNorton/UntitledApp.git`.
 - Use `git status` to check what's been changed or ready to be comitted.
