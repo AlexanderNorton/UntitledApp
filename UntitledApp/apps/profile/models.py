@@ -1,3 +1,4 @@
+from email.mime import image
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
@@ -16,6 +17,7 @@ class Profile(models.Model):
         max_length=400, default="This is a description")
     created_date = models.DateTimeField(default=timezone.now)
     updated_date = models.DateTimeField(blank=True, null=True)
+    profile_image = models.ImageField(upload_to='profile_pictures', blank=True)
 
     def update(self):
         self.updated_date = timezone.now()
