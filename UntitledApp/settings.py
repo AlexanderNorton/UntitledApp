@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'UntitledApp.apps.profile',
     'UntitledApp.apps.homepage',
     'UntitledApp.apps.authentication',
+
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
